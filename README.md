@@ -6,7 +6,7 @@ It recursively scans a directory for source code files, respects `.gitignore`, a
 ## Usage
 
 #### Basic Usage
-Scans the current directory using smart defaults (includes common code files, ignores .git, node_modules, etc).
+Scans the specified directory using smart defaults (includes common code files, ignores .git, node_modules, etc).
 ```bash
 src2file ./my-project
 # Creates: my_project.txt

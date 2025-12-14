@@ -271,6 +271,10 @@ def main():
     parser.add_argument('-s', '--skip', help='Extensions to skip from defaults')
     parser.add_argument('-i', '--ignore', help='Additional ignore patterns')
 
+    if len(sys.argv) == 1:
+        parser.print_help(sys.stderr)
+        sys.exit(1)
+
     args = parser.parse_args()
     
     if not os.path.isdir(args.directory):
